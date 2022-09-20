@@ -99,7 +99,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
                 'ip'=>$_SERVER['REMOTE_ADDR']
                 
             ),
-            'test_event_code' => $this->TEST_EVENT_CODE,
+           // 'test_event_code' => $this->TEST_EVENT_CODE,
             'properties' => $data['properties']
         );
 
@@ -108,9 +108,9 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     public function storedebug($response){
-        if($this->DEBUG){
+        // if($this->DEBUG){
         $this->logger->debug(json_encode($response));
-        }
+        // }
     }
     
 
